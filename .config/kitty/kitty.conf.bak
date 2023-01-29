@@ -1,0 +1,41 @@
+font_family      FiraCode Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+font_size 12.0
+
+disable_ligatures never 
+
+enable_audio_bell no 
+
+url_style straight
+
+remember_window_size yes 
+initial_window_width  800
+initial_window_height 600
+
+# BEGIN_KITTY_THEME
+# Doom One
+include current-theme.conf
+# END_KITTY_THEME
+
+tab_bar_edge bottom
+tab_bar_align left
+tab_bar_style custom
+tab_bar_min_tabs 1
+tab_activity_symbol none
+bell_on_tab no
+tab_separator ""
+tab_bar_margin_width 0.0
+tab_bar_margin_height 0.0 0.0
+
+# set-var foo run-shell-command ./num2words.py #I
+# set foo `100`
+# tab_title_template "echo hello"
+
+# tab_title_template "{f'{title[:30]}…' if title.rindex(title[-1]) + 1 > 30 else (title.center(6) if (title.rindex(title[-1]) + 1) % 2 == 0 else title.center(5))}"
+# tab_title_template "{f'…{title[-12:]}' if title.rindex(title[-1]) + 1 > 13 else title.center(7)} "
+tab_title_template "{index}: {title[title.replace(':','/').replace(' ','/').rfind('/')+1:]}"  
+active_tab_font_style   bold
+# cursor_text_color background 
