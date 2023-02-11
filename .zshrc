@@ -145,7 +145,7 @@ export PATH=$PATH:$lib_path/scripts
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias make='bash make.sh'
-alias build='bash build.sh'
+# alias make='bash make.sh'
+# alias build='bash build.sh'
 
 ZLE_RPROMPT_INDENT=0

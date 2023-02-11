@@ -208,6 +208,7 @@ require('lualine').setup {
     theme = 'github_dark_default',
     component_separators = '|',
     section_separators = '',
+    globalstatus = true,
   },
 }
 
@@ -619,3 +620,7 @@ vim.keymap.set('n', '<leader>b', ":!bash build.sh % xyz<Enter><Enter>", { norema
 vim.keymap.set('n', '<leader>t', ":!./xyz < in > out<Enter><Enter>", { noremap = true, silent = true })
 
 vim.keymap.set('n', '<C-\\>', ":ToggleTerm<Enter>", { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>sv', ":source $MYVIMRC<Enter>", { noremap = true, silent = true })
+
+vim.opt.laststatus = 3
