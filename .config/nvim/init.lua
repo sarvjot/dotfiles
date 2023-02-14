@@ -25,7 +25,7 @@ require('packer').startup(function(use)
 
   use { -- Autocompletion
     'hrsh7th/nvim-cmp',
-    requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+    requires = { 'hrsh7th/cmp-nvim-lsp', 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
   }
 
   use { -- Highlight, edit, and navigate code
@@ -105,8 +105,30 @@ require('packer').startup(function(use)
   }
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
+    require("toggleterm").setup{
+      open_mapping = [[<c-\>]],
+      direction = 'float',
+      start_in_insert = true,
+      terminal_mappings = true,
+      float_opts = {
+        border = 'curved',
+        width = 126,
+      },
+    }
   end}
+
+  function _G.set_terminal_keymaps()
+    local opts = {buffer = 0}
+    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+    vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+    vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+    vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+    vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+    vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+  end
+
+  -- if you only want these mappings for toggle term use term://*toggleterm#* instead
+  vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
@@ -236,12 +258,14 @@ require('gitsigns').setup {
 
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
+local actions = require("telescope.actions")
 require('telescope').setup {
   defaults = {
     mappings = {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
+        ["<esc>"] = actions.close,
       },
     },
   },
@@ -253,14 +277,13 @@ pcall(require('telescope').load_extension, 'fzf')
 -- See `:help telescope.builtin`
 
 -- vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
--- vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
--- vim.keymap.set('n', '<leader>/', function()
---   -- You can pass additional configuration to telescope to change theme, layout, etc.
---   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
---     winblend = 10,
---     previewer = false,
---   })
--- end, { desc = '[/] Fuzzily search in current buffer]' })
+vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+vim.keymap.set('n', '<leader>/', function()
+  -- You can pass additional configuration to telescope to change theme, layout, etc.
+  require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+    previewer = false,
+  })
+end, { desc = '[/] Fuzzily search in current buffer]' })
 
 vim.keymap.set('n', '<leader>sn',
   function ()
@@ -493,33 +516,6 @@ cmp.setup {
         fallback()
       end
     end, { 'i', 's' }),
-    ['<C-e>'] = cmp.mapping(function(fallback)
-      cmp.mapping.abort()
-      local copilot_keys = vim.fn["copilot#Accept"]()
-      if copilot_keys ~= "" then
-        vim.api.nvim_feedkeys(copilot_keys, "i", true)
-      else
-        fallback()
-      end
-    end),
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
   },
   sources = {
     { name = 'nvim_lsp' },
@@ -622,6 +618,5 @@ vim.keymap.set('n', 'gl', ":lua vim.diagnostic.open_float()<Enter>", { noremap =
 vim.keymap.set('n', '<leader>b', ":!bash build.sh % xyz<Enter><Enter>", { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>t', ":!./xyz < in > out<Enter><Enter>", { noremap = true, silent = true })
 
-vim.keymap.set('n', '<C-\\>', ":ToggleTerm<Enter>", { noremap = true, silent = true })
-
+-- global status line for all splits
 vim.opt.laststatus = 3
