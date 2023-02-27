@@ -130,6 +130,10 @@ require('packer').startup(function(use)
   -- if you only want these mappings for toggle term use term://*toggleterm#* instead
   vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
+  -- cpbooster setup
+  use 'searleser97/cpbooster.vim'
+
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
