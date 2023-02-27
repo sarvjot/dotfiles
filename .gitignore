@@ -93,3 +93,13 @@
 .config/wacomtablet-kderc
 .config/xdg-desktop-portal-kderc
 .config/xsettingsd/
+.config/auroraerc
+.config/chromium/
+.config/fontconfig/
+.config/kaccessrc
+.config/klaunchrc
+.config/ksplashrc
+.config/notificationhelper
+.config/plasma-nm.lock
+.config/plasmarc
+.config/sddmthemeinstallerrc
