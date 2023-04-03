@@ -103,3 +103,7 @@
 .config/plasma-nm.lock
 .config/plasmarc
 .config/sddmthemeinstallerrc
+.config/flutter
+.config/nvim
+.config/htop/
+.config/ksslcertificatemanager

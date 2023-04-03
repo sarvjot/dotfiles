@@ -4,7 +4,7 @@ local gset = vim.g
 gset.mapleader = ' '
 gset.maplocalleader = ' '
 
-function custom_map(mode, lhs, rhs, opts)
+local function custom_map(mode, lhs, rhs, opts)
   vim.keymap.set(mode, lhs, rhs, vim.tbl_extend('force', { noremap = true, silent = true }, opts or {}))
 end
 

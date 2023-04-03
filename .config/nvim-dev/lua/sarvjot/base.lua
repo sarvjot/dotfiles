@@ -29,7 +29,7 @@ local woset = vim.wo
 woset.number = true                                             -- Make line numbers default
 woset.signcolumn = 'yes'                                        -- Arrange space for signs (e.g. breakpoints)
 
--- local gset = vim.g
+local gset = vim.g
 
--- gset.loaded_netrw = 1                                        -- disable netrw at the very start of your init.lua (strongly advised)
--- gset.loaded_netrwPlugin = 1
+gset.loaded_netrw = 1                                           -- disable netrw at the very start of your init.lua (strongly advised)
+gset.loaded_netrwPlugin = 1

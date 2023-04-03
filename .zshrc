@@ -140,6 +140,8 @@ export lib_path="$HOME/workspace/programming/code_lib"
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$lib_path/scripts
+export PATH=$PATH:$HOME/bob
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -1,0 +1,19 @@
+{
+	"name": "my neovim snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./snippets/cpp.json"
+			},
+			{
+				"language": [
+					"java"
+				],
+				"path": "./snippets/java.json"
+			}
+		]
+	}
+}

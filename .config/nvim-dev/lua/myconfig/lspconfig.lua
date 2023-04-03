@@ -60,7 +60,9 @@ function M.setup()
         Lua = {
           diagnostics = {
             globals = { 'vim' },
-          }
+          },
+          workspace = { checkThirdParty = false },
+          telemetry = { enable = false },
         }
       }
     end
@@ -68,5 +70,34 @@ function M.setup()
     require('lspconfig')[lsp].setup(config)
   end
 end
+
+--[[
+M.reload = function(mod)
+  if not package.loaded[mod] then
+    return M.require_safe(mod)
+  end
+
+  local old = package.loaded[mod]
+  package.loaded[mod] = nil
+  local new = M.require_safe(mod)
+
+  if type(old) == "table" and type(new) == "table" then
+    local repeat_tbl = {}
+    _replace(old, new, repeat_tbl)
+  end
+
+  package.loaded[mod] = old
+  return old
+end
+
+function M.setup()
+  local status_ok, lspconfig = pcall(M.reload, "lspconfig")
+  if not status_ok then
+    return
+  end
+
+  lspconfig['lua_ls'].setup()
+end
+--]]
 
 return M
