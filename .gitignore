@@ -107,3 +107,5 @@
 .config/nvim
 .config/htop/
 .config/ksslcertificatemanager
+.config/plasma-nm.lock.rmlock
+.config/plasma.emojierrc
