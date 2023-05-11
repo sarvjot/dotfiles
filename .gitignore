@@ -109,3 +109,7 @@
 .config/ksslcertificatemanager
 .config/plasma-nm.lock.rmlock
 .config/plasma.emojierrc
+.config/MongoDB Compass/
+.config/kiorc
+.config/plasma-nm.lock.rmlock.rmlock
+.config/vlc/
