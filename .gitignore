@@ -114,3 +114,4 @@
 .config/plasma-nm.lock.rmlock.rmlock
 .config/vlc/
 packer_compiled.lua
+.vscode
