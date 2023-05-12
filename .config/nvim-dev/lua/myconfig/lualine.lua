@@ -4,7 +4,7 @@ function M.setup()
   require('lualine').setup {
     options = {
       icons_enabled = false,
-      theme = 'github_dark_default',
+      theme = 'monokaipro',
       component_separators = '|',
       section_separators = '',
       globalstatus = true,

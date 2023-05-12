@@ -53,10 +53,9 @@ require('packer').startup(function(use)
     config = require('myconfig.gitsigns').setup,
   }
 
-  use{
-    'projekt0n/github-nvim-theme',
-    branch = '0.0.x',
-    config = require('myconfig.github-nvim-theme').setup,
+  use {
+    "https://gitlab.com/__tpb/monokai-pro.nvim",
+    config = require('myconfig.monokaipro').setup,
   }
 
   use {

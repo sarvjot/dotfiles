@@ -1,5 +1,5 @@
 # pyright: reportMissingImports=false
-from datetime import datetime
+# from datetime import datetime
 from kitty.boss import get_boss
 from kitty.fast_data_types import Screen, add_timer, get_options
 from kitty.utils import color_as_int
@@ -179,11 +179,11 @@ def draw_tab(
     global right_status_length
     if timer_id is None:
         timer_id = add_timer(_redraw_tab_bar, REFRESH_TIME, True)
-    clock = datetime.now().strftime(" %H:%M")
-    date = datetime.now().strftime(" %d.%m.%Y")
+    # clock = datetime.now().strftime(" %H:%M")
+    # date = datetime.now().strftime(" %d.%m.%Y")
     cells = get_battery_cells()
-    cells.append((clock_color, clock))
-    cells.append((date_color, date))
+    # cells.append((clock_color, clock))
+    # cells.append((clock_color, date))
     right_status_length = RIGHT_MARGIN
     for cell in cells:
         right_status_length += len(str(cell[1]))
