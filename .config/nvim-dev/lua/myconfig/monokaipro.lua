@@ -11,7 +11,7 @@ function M.setup()
   vim.g.monokaipro_colors = { hint = "orange", error = "#ff0000" }
 
   -- Load the colorscheme
-  vim.cmd[[colorscheme monokaipro]]
+  vim.cmd [[colorscheme monokaipro]]
 end
 
 return M

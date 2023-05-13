@@ -27,7 +27,8 @@ function M.setup()
     nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
     nmap('<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
     nmap('<leader>wr', vim.lsp.buf.remove_workspace_folder, '[W]orkspace [R]emove Folder')
-    nmap('<leader>wl', function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end, '[W]orkspace [L]ist Folders')
+    nmap('<leader>wl', function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end,
+      '[W]orkspace [L]ist Folders')
 
     vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
       if vim.lsp.buf.format then
@@ -55,7 +56,7 @@ function M.setup()
       capabilities = capabilities,
     }
 
-    if(lsp == 'lua_ls') then
+    if (lsp == 'lua_ls') then
       config.settings = {
         Lua = {
           diagnostics = {

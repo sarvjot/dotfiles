@@ -28,11 +28,11 @@ function M.setup()
     require('telescope.builtin').find_files({ cwd = '~/.config/nvim' })
   end
 
-  telescope_map('<leader><space>',  require('telescope.builtin').buffers,     '[ ] Find existing buffers')
-  telescope_map('<leader>/',        search_buffer_action,                     '[/] Fuzzy search in current buffer]')
-  telescope_map('<leader>sn',       search_neovim_action,                     '[S]earch [N]eovim')
-  telescope_map('<leader>sf',       require('telescope.builtin').find_files,  '[S]earch [F]iles')
-  telescope_map('<leader>sg',       require('telescope.builtin').live_grep,   '[S]earch by [G]rep')
+  telescope_map('<leader><space>', require('telescope.builtin').buffers, '[ ] Find existing buffers')
+  telescope_map('<leader>/', search_buffer_action, '[/] Fuzzy search in current buffer]')
+  telescope_map('<leader>sn', search_neovim_action, '[S]earch [N]eovim')
+  telescope_map('<leader>sf', require('telescope.builtin').find_files, '[S]earch [F]iles')
+  telescope_map('<leader>sg', require('telescope.builtin').live_grep, '[S]earch by [G]rep')
 end
 
 return M
