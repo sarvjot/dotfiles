@@ -86,7 +86,7 @@ require('packer').startup(function(use)
     config = require('myconfig.comment').setup,
   }
 
-  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically according to file
 
   use {
     'github/copilot.vim',
