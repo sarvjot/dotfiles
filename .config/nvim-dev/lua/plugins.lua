@@ -67,8 +67,9 @@ require('packer').startup(function(use)
   }
 
   use {
-    "https://gitlab.com/__tpb/monokai-pro.nvim",
-    config = require('myconfig.monokaipro').setup,
+    "catppuccin/nvim",
+    as = "catppuccin",
+    config = require('myconfig.catppuccin').setup,
   }
 
   use {

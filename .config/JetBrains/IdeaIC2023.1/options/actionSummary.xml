@@ -1,0 +1,202 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="3" l="1688417413498" />
+    </e>
+    <e n="$Delete">
+      <i c="2" l="1688394883464" />
+    </e>
+    <e n="$Redo">
+      <i c="190" l="1688417439660" />
+    </e>
+    <e n="$SelectAll">
+      <i c="6" l="1688396026504" />
+    </e>
+    <e n="$Undo">
+      <i c="226" l="1688419562002" />
+    </e>
+    <e n="CommentByLineComment">
+      <i c="34" l="1688419977155" />
+    </e>
+    <e n="CreateDesktopEntry">
+      <i c="1" l="1688389334751" />
+    </e>
+    <e n="Debug">
+      <i c="1" l="1688419270491" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="355" l="1688421635145" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="40" l="1688417489660" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="1" l="1688417486805" />
+    </e>
+    <e n="EditorCopy">
+      <i c="7" l="1688396027177" />
+    </e>
+    <e n="EditorCut">
+      <i c="7" l="1688416503946" />
+    </e>
+    <e n="EditorDeleteLine">
+      <i c="1" l="1688392551928" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="19" l="1688417488115" />
+    </e>
+    <e n="EditorDown">
+      <i c="1258" l="1688419975757" />
+    </e>
+    <e n="EditorDownWithSelection">
+      <i c="34" l="1688419952685" />
+    </e>
+    <e n="EditorEnter">
+      <i c="124" l="1688419441282" />
+    </e>
+    <e n="EditorEscape">
+      <i c="35" l="1688417482219" />
+    </e>
+    <e n="EditorLeft">
+      <i c="90" l="1688419436810" />
+    </e>
+    <e n="EditorLeftWithSelection">
+      <i c="23" l="1688419439153" />
+    </e>
+    <e n="EditorNextWord">
+      <i c="126" l="1688417230944" />
+    </e>
+    <e n="EditorNextWordWithSelection">
+      <i c="45" l="1688416775086" />
+    </e>
+    <e n="EditorPaste">
+      <i c="19" l="1688417448164" />
+    </e>
+    <e n="EditorPreviousWord">
+      <i c="155" l="1688419560234" />
+    </e>
+    <e n="EditorPreviousWordWithSelection">
+      <i c="35" l="1688408341068" />
+    </e>
+    <e n="EditorRight">
+      <i c="82" l="1688417483381" />
+    </e>
+    <e n="EditorRightWithSelection">
+      <i c="22" l="1688416775551" />
+    </e>
+    <e n="EditorSelectWord">
+      <i c="6" l="1688408388315" />
+    </e>
+    <e n="EditorSplitLine">
+      <i c="4" l="1688415670769" />
+    </e>
+    <e n="EditorStartNewLine">
+      <i c="2" l="1688415672163" />
+    </e>
+    <e n="EditorTab">
+      <i c="8" l="1688416959929" />
+    </e>
+    <e n="EditorUnindentSelection">
+      <i c="4" l="1688392593863" />
+    </e>
+    <e n="EditorUp">
+      <i c="1117" l="1688419976173" />
+    </e>
+    <e n="EditorUpWithSelection">
+      <i c="92" l="1688419563042" />
+    </e>
+    <e n="ExternalSystem.ProjectRefreshAction">
+      <i c="2" l="1688395254444" />
+    </e>
+    <e n="FindNext">
+      <i c="1" l="1688408363020" />
+    </e>
+    <e n="MethodDown">
+      <i c="2" l="1688413466721" />
+    </e>
+    <e n="MethodUp">
+      <i c="3" l="1688415794106" />
+    </e>
+    <e n="NewClass">
+      <i c="4" l="1688394529876" />
+    </e>
+    <e n="RecentFiles">
+      <i c="1" l="1688407763852" />
+    </e>
+    <e n="RenameElement">
+      <i c="1" l="1688392160973" />
+    </e>
+    <e n="RenameFile">
+      <i c="1" l="1688394499195" />
+    </e>
+    <e n="Run">
+      <i c="69" l="1688496372501" />
+    </e>
+    <e n="SaveAll">
+      <i c="3" l="1688394975476" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="1" l="1688394686896" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="1" l="1688407670172" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="6" l="1688416678903" />
+    </e>
+    <e n="Stop">
+      <i c="23" l="1688421658531" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1688389354874" />
+    </e>
+    <e n="com.intellij.execution.actions.CreateAction">
+      <i c="1" l="1688410038331" />
+    </e>
+    <e n="com.intellij.find.SearchReplaceComponent$CloseAction">
+      <i c="1" l="1688408364044" />
+    </e>
+    <e n="com.intellij.ide.actions.SettingsEntryPointAction$1">
+      <i c="1" l="1688407676162" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1688495312769" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
+      <i c="2" l="1688410037820" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1688394400199" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="4" l="1688394688073" />
+    </e>
+    <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
+      <i c="1" l="1688407765298" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$4">
+      <i c="1" l="1688394884650" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="2" l="1688495712358" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="1" l="1688407568138" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$3">
+      <i c="2" l="1688389331107" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1688495686414" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="1" l="1688389549012" />
+    </e>
+    <e n="copilot.applyInlays">
+      <i c="30" l="1688416738295" />
+    </e>
+    <e n="copilot.disposeInlays">
+      <i c="1" l="1688408089546" />
+    </e>
+  </component>
+</application>
