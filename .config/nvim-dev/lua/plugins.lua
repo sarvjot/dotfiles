@@ -18,7 +18,10 @@ require('packer').startup(function(use)
     requires = {
       'williamboman/mason.nvim',           -- Install LSPs
       'williamboman/mason-lspconfig.nvim', -- Bridge gap between mason and lspconfig
-      'j-hui/fidget.nvim',                 -- Useful status updates for LSPs
+      {
+        'j-hui/fidget.nvim',               -- Useful status updates for LSPs
+        tag = "legacy",
+      },
       'hrsh7th/cmp-nvim-lsp',
     },
     config = function()

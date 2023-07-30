@@ -67,14 +67,7 @@ function M.setup()
   -- Code folding
   vim.wo.foldmethod = 'expr'
   vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
-
-  -- Autocommand to automatically open folds when opening a file
-  vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost" }, {
-    pattern = "*",
-    callback = function()
-      vim.cmd("normal zR")
-    end
-  })
+  vim.wo.foldlevel = 99
 end
 
 return M

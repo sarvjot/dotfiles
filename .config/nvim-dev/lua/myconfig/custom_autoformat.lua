@@ -45,6 +45,11 @@ function M.setup()
         return
       end
 
+      -- purposely turn off formatting for c++
+      if client.name == 'clangd' then
+        return
+      end
+
       -- Create an autocmd that will run *before* we save the buffer.
       --  Run the formatting command for the LSP that has just attached.
       vim.api.nvim_create_autocmd('BufWritePre', {
