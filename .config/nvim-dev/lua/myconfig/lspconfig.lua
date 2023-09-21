@@ -35,7 +35,7 @@ function M.setup()
   require('fidget').setup()
   require('mason').setup()
 
-  local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'lua_ls', 'gopls' }
+  local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'lua_ls', 'gopls', 'html' }
   require('mason-lspconfig').setup {
     ensure_installed = servers,
   }

@@ -115,3 +115,13 @@
 .config/vlc/
 packer_compiled.lua
 .vscode
+.config/BraveSoftware/
+.config/discord/
+.config/kio_ftprc
+.config/kioslaverc
+.config/menus/
+.config/plasma-nm.lock.rmlock.rmlock.rmlock
+.config/plasmawindowed-appletsrc
+.config/plasmawindowedrc
+.config/simple-update-notifier/
+.config/latte/

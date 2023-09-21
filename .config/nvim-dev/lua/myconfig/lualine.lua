@@ -4,7 +4,7 @@ function M.setup()
   require('lualine').setup {
     options = {
       icons_enabled = false,
-      theme = 'catppuccin',
+      theme = 'moonfly',
       component_separators = '|',
       section_separators = '',
       globalstatus = true,

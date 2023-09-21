@@ -145,6 +145,8 @@ export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
+
 # alias make='bash make.sh'
 # alias build='bash build.sh'
 

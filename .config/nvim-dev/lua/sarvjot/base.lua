@@ -14,10 +14,9 @@ oset.splitbelow = true                -- Force Split Below
 oset.splitright = true                -- Force Split Right
 
 -- Tab settings
-oset.expandtab = true -- expand tabs to spaces
-oset.tabstop = 2      -- number of visual spaces per TAB
-oset.shiftwidth = 2   -- number of spaces in a indent
-oset.softtabstop = 2  -- makes editing easy, with <TAB> and <BS> deleting the correct number of spaces
+oset.tabstop = 2     -- number of visual spaces per TAB
+oset.shiftwidth = 2  -- number of spaces in a indent
+oset.softtabstop = 2 -- makes editing easy, with <TAB> and <BS> deleting the correct number of spaces
 
 -- global status line for all splits
 oset.laststatus = 3

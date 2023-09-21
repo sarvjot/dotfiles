@@ -70,9 +70,9 @@ require('packer').startup(function(use)
   }
 
   use {
-    "catppuccin/nvim",
-    as = "catppuccin",
-    config = require('myconfig.catppuccin').setup,
+    "bluz71/vim-moonfly-colors",
+    as = "moonfly",
+    config = require('myconfig.moonfly').setup,
   }
 
   use {
