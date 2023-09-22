@@ -1,5 +1,5 @@
 {
-  "contestsDirectory": "/home/sarvjot/workspace/programming/cp_dsa/Contests",
+  "contestsDirectory": "/home/sarvjot/workspace/cp_dsa/Contests",
   "port": 1327,
   "editor": "kitty",
   "closeAfterClone": true,
@@ -11,7 +11,7 @@
   "cloneInCurrentDir": false,
   "languages": {
     "cpp": {
-      "template": "/home/sarvjot/workspace/programming/code_lib/templates/cp_templates/template.cpp",
+      "template": "/home/sarvjot/workspace/code_lib/snippets/cp_snippets/ds_algo_snippets/boilerplate.cpp",
       "command": "g++ -std=c++17 -O3",
       "debugCommand": "g++ -std=c++17 -DSARVJOT -ggdb3 -fmax-errors=2 -fsanitize=signed-integer-overflow -fsanitize=bounds-strict -fsanitize=address -fsanitize=integer-divide-by-zero -fsanitize=float-divide-by-zero -fsanitize=pointer-overflow -fsanitize=shift-exponent -fsplit-stack -Wshadow -Wall -fconcepts",
       "aliases": {
