@@ -137,6 +137,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export lib_path="$HOME/workspace/programming/code_lib"
+export dotfiles_path="$HOME/.dotfiles"
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$lib_path/scripts
@@ -146,8 +147,5 @@ export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
-
-# alias make='bash make.sh'
-# alias build='bash build.sh'
 
 ZLE_RPROMPT_INDENT=0
