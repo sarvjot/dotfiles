@@ -125,3 +125,5 @@ packer_compiled.lua
 .config/plasmawindowedrc
 .config/simple-update-notifier/
 .config/latte/
+.config/Docker\ Desktop/
+.config/JetBrains/
