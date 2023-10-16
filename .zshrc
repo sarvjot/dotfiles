@@ -127,9 +127,6 @@ alias postman='~/Postman_Agent/Postman\ Agent/Postman\ Agent'
 [[ -s /home/sarvjot/.autojump/etc/profile.d/autojump.sh ]] && source /home/sarvjot/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
-bindkey '^I'   complete-word       # tab          | complete
-bindkey '^[[Z' autosuggest-accept  # shift + tab  | autosuggest
-
 export PATH=$PATH:/usr/local/go/bin
 
 export NVM_DIR="$HOME/.nvm"
