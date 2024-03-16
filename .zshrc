@@ -117,14 +117,18 @@ alias ll='ls -Alh'
 
 alias python='python3'
 
-alias cat='bat --theme=GitHub'
+alias cat='bat'
 
 alias postman='~/Postman_Agent/Postman\ Agent/Postman\ Agent'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[[ -s /home/sarvjot/.autojump/etc/profile.d/autojump.sh ]] && source /home/sarvjot/.autojump/etc/profile.d/autojump.sh
+# Autojump Linux
+# [[ -s /home/sarvjot/.autojump/etc/profile.d/autojump.sh ]] && source /home/sarvjot/.autojump/etc/profile.d/autojump.sh
+# Autojump Macos
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
 autoload -U compinit && compinit -u
 
 export PATH=$PATH:/usr/local/go/bin
@@ -140,9 +144,22 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$lib_path/scripts
 export PATH=$PATH:$HOME/bob
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
 
 ZLE_RPROMPT_INDENT=0
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+ 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+ 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sarvjot.singh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sarvjot.singh/google-cloud-sdk/path.zsh.inc'; fi
+ 
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sarvjot.singh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sarvjot.singh/google-cloud-sdk/completion.zsh.inc'; fi

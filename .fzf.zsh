@@ -1,18 +1,13 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */home/sarvjot/.fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/home/sarvjot/.fzf/bin"
+if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/home/sarvjot/.fzf/shell/completion.zsh" 2> /dev/null
+source "/opt/homebrew/opt/fzf/shell/completion.zsh"
 
 # Key bindings
 # ------------
-source "/home/sarvjot/.fzf/shell/key-bindings.zsh"
-
-# Custom 
-
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-
+source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
